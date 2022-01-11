@@ -7,8 +7,9 @@
 .container {
   width: 80%;
 }
+
 .d-flex {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
 }
 
@@ -19,6 +20,7 @@
 .a-items-c {
   align-items: center;
 }
+
 .mx-auto {
   margin: 0 auto;
 }

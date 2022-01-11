@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Movie;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -9,7 +10,7 @@ class PageController extends Controller
   // Return view Home
   public function index()
   {
-
-    return view('home');
+    $movies = Movie::all();
+    return view('home', compact('movies'));
   }
 }
